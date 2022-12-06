@@ -1,0 +1,11 @@
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student EMPTY>
+    <!ATTLIST student sid ID #REQUIRED>
+    <!ATTLIST student snm CDATA #REQUIRED>
+]>
+<!--ID DECLARATION EXAMPLE-->
+<students>
+<student sid="N101" snm="shiv"/>
+<student sid="N102" snm="ram"/>
+</students>
