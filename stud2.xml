@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+    <!ELEMENT students (course*,student*)>
+    <!ELEMENT course EMPTY>
+    <!ATTLIST course cid ID #REQUIRED>
+    <!ATTLIST course cnm CDATA #REQUIRED>
+    <!ELEMENT student EMPTY>
+    <!ATTLIST student sid ID #REQUIRED>
+    <!ATTLIST student snm CDATA #REQUIRED>
+    <!ATTLIST student scourse IDREF #IMPLIED>
+    <!ATTLIST student scourses IDREFS #IMPLIED>
+]>
+<!--IDREF AND IDREFS EXAMPLE-->
+<students>
+    <course cid="CJ01" cnm="CORE JAVA" />
+    <course cid="AJ02" cnm="ADVANCED JAVA" />
+    <course cid="JB03" cnm="JAVA BEANS" />
+    <student sid="B01" snm="Shiv" scourse="CJ01"/>
+    <student sid="b02" snm="Raam" scourses="CJ01 AJ02 JB03"/>
+</students>
