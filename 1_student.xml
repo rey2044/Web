@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE student [
+    <!ELEMENT student (name,rollno)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT rollno (#PCDATA)>
+]>
+<student>
+    <name>Krishna</name>
+    <rollno>101</rollno>
+</student>
