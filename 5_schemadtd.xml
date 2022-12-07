@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note [
+    <!ELEMENT note (venue,time,date,eventtype,organizer)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT heading (#PCDATA)>
+    <!ELEMENT body (#PCDATA)>
+]>
+<!--schema definationed program with DTD-->
+<note>
+    <to>Shreya</to>
+    <from>Siya</from>
+    <heading>Leave note</heading>
+    <body>Due to my sickness I can't be present in tommorow's meeting</body>
+</note>
