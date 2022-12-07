@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ENUMERATION EXAMPLE-->
+<!DOCTYPE payments [
+    <!ELEMENT payments (payment+)>
+    <!ELEMENT payment EMPTY>
+    <!ATTLIST payment paytype (DD|CHECK|CASH) #REQUIRED>
+]>
+<payments>
+    <payment paytype="DD"/>
+    <payment paytype="CHECK"/>
+</payments>
