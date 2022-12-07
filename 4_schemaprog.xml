@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+    <to>Shreya</to>
+    <from>Siya</from>
+    <heading>Leave note</heading>
+    <body>Due to my sickness I can't be present in tommorow's meeting</body>
+</note>
+
+<!--Message Program With XML Schema-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="note">
+    <xs:complex type>
+        <xs:sequence>
+            <xs:element name="to" type="xs:string"/>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="heading" type="xs:string"/>
+            <xs:element name="body" type="xs:string"/>
+        </xs:sequence>
+    </xs:complex>
+</xs:element>
+</xs:schema>
