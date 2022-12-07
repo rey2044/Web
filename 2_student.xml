@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE student SYSTEM "struct.dtd">
-<!--Student program with External DTD-->
-<student>
-    <name>Krishna</name>
-    <rollno>101</rollno>
-</student>
