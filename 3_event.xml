@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note [
+    <!ELEMENT note (venue,time,date,eventtype,organizer)>
+    <!ELEMENT venue (#PCDATA)>
+    <!ELEMENT time (#PCDATA)>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT eventtype (#PCDATA)>
+    <!ELEMENT organizer (#PCDATA)>
+]>
+<!--Event-information Program-->
+<note>
+    <venue>BR Farm,Navsari</venue>
+    <time>9:30</time>
+    <date>04-01-2022</date>
+    <eventtype>Party</eventtype>
+    <organizer>Naranlala Collage of professional and applied sciences</organizer>
+</note>
