@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Read Json Data File</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("button").click(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (xhttp.readyState === 4 && xhttp.status === 200) {
+                let d=JSON.parse(xhttp.responseText);
+                for(let i=0;i<d.length;i++)
+                {
+                    $("table").append("<tr><td>"+d[i].name+"</td><td>"+d[i].city+"</td><td>"+d[i].contact+"</td><td>"+d[i].mail+"</td></tr>")
+                }
+              }
+            };
+            xhttp.open("GET", "data5.json", true);
+            xhttp.send();
+          });
+        });
+      </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>City</td>
+            <td>Contact</td>
+            <td>E-Mail</td>
+        </tr>
+    </table>
+    <button>Click Me</button>
+</body>
+</html>

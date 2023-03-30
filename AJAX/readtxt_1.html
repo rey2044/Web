@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reading Text Via Ajaxb Call</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          alert("click");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (xhttp.readyState === 4 && xhttp.status === 200) {
+              alert(xhttp.responseText);
+              document.getElementById("data").innerHTML=xhttp.responseText;
+            }
+          };
+          xhttp.open("GET", "data.txt", true);
+          xhttp.send();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="data"></div>
+    <button>Click me</button>
+  </body>
+</html>
+
